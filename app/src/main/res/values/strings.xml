@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Restaurantes Cáceres</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="cerca_de_mi">Cerca de mí</string>
+    <string name="ordenar_valoracion">Ordenar por valoración</string>
+    <string name="add_fav">Añadir a favoritos</string>
+    <string name="home">Home</string>
+    <string name="eliminar_fav">Eliminar de favoritos</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

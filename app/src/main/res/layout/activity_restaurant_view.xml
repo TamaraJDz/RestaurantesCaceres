@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    tools:context="com.restaurantes.tamara.proyectoasee.RestaurantActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restaurant_id"
+        android:visibility="gone"
+        android:layout_below="@+id/restaurant_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restaurant_phone"
+        android:visibility="gone"
+        android:layout_below="@+id/restaurant_name"
+        />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayoutItemRestaurant">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="#E0F7FA">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="RESTAURANTE"
+                    android:id="@+id/textViewName"
+                    android:textColor="#004D40"
+                    android:textSize="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:layout_gravity="right"
+                    android:progressBackgroundTint="#E91E63"
+                    android:progressTint="#FFC107"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:layout_below="@+id/textViewName"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Descripción del Restaurante"
+                android:textSize="17dp"
+                android:paddingTop="8dp"
+                android:textColor="#006064"
+                android:id="@+id/textViewDescription" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Formamos parte del mundo, de su naturaleza y de su historia, y este mundo es el que nos da sentido. Justo es reconocer y deleitarse en su acogida. Aquí lo ofrecemos bajo distintas opciones. "
+                android:textSize="10dp"
+                android:id="@+id/textViewDataDescription" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Tenedores:  "
+                    android:textColor="#006064"
+                    android:textSize="12dp"
+                    android:id="@+id/textViewForks" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="12dp"
+                    android:textColor="#006064"
+                    android:id="@+id/textViewDataForks"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textViewForks" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Capacidad:  "
+                    android:textColor="#006064"
+                    android:textSize="12dp"
+                    android:id="@+id/textViewCapacity"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/textViewDataCapacity" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="12dp"
+                    android:textColor="#006064"
+                    android:id="@+id/textViewDataCapacity"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Categoría:  "
+                    android:textColor="#006064"
+                    android:textSize="12dp"
+                    android:id="@+id/textViewCategory"
+                    android:layout_marginStart="51dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textViewDataForks" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="12dp"
+                    android:textColor="#006064"
+                    android:id="@+id/textViewDataCategory"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textViewCategory" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="10dp"
+                android:paddingTop="5dp"
+                android:textColor="#F06292"
+                android:id="@+id/textViewDataEmail"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12dp"
+                android:autoLink="web"
+                android:textColorLink="#F06292"
+                android:id="@+id/textViewDataWeb"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_directions"
+                    android:text="Como Llegar"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:id="@+id/buttonComoLlegar"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_call"
+                    android:text="Llamar"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:id="@+id/buttonLlamar"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E0F7FA"
+                android:paddingTop="8dp"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comentar"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:id="@+id/buttonComentar"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Comentarios"
+                    android:textSize="17dp"
+                    android:textColor="#006064"
+                    android:id="@+id/textViewReviews"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvReview"
+                    android:layout_below="@+id/buttonComentar" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

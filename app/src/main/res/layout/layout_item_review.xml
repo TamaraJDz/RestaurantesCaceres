@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:id="@+id/cv2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_id"
+        android:visibility="gone"
+        android:layout_below="@+id/reviewName"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewName"
+            android:layout_alignParentTop="true"
+            android:textSize="13dp"
+            android:textColor="#006064"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:id="@+id/ratingBarReviews"
+            android:progressBackgroundTint="#BDBDBD"
+            android:progressTint="#FFC107"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewText"
+            android:textSize="10dp"
+            android:layout_below="@+id/reviewName"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
